@@ -13,6 +13,15 @@ page[size="A4"] {
   height: 29.7cm; 
 }
 
+#DivIdToPrint {
+  
+  color:red;font-size:100px;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  
+}
+
 p {
   
   color:red;font-size:100px;
