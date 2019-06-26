@@ -1,19 +1,18 @@
 
   @media print {
   body * {
-    visibility: visible;
+    visibility: hidden;
    
   }
   #section-to-print, #section-to-print * {
     visibility: visible;
     color: red;
     font-size: 40px;
-  }
-  #section-to-print {
+  
     position: absolute;
     left: 0;
     top: 0;
     
     
-  }
+  
 }
