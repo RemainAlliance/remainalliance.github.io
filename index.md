@@ -1,19 +1,14 @@
 ## Remain Alliance
 
-```html
-<h2>Example of code</h2>
+<p>Click the button to print the current page.</p>
 
-<pre>
-    <div class="container">
-        <div class="block two first">
-            <h2>Your title</h2>
-            <div class="wrap">
-            //Your content
-            </div>
-        </div>
-    </div>
-</pre>
-```
+<button onclick="myFunction()">Print this page</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
 
 You can use the [editor on GitHub](https://github.com/RemainAlliance/remainalliance.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
