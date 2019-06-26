@@ -2,47 +2,36 @@
 <html>
 	<head>
 		<title>Remain Alliancetitle>
-			<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js" > </script> 
+			<!-- CSS for the things we want to print (print view) -->
+<style type="text/css" media="print">
 
-
-
-<script type="text/javascript">
-
-    function PrintElem(elem)
-    {
-        Popup($(elem).html());
+#SCREEN_VIEW_CONTAINER{
+        display: none;
     }
-
-    function Popup(data)
-    {
-        var mywindow = window.open('', 'new div', 'height=400,width=600');
-        mywindow.document.write('<html><head><title>my div</title>');
-        /*optional stylesheet*/ //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
-        mywindow.document.write('</head><body >');
-        mywindow.document.write(data);
-        mywindow.document.write('</body></html>');
-
-        mywindow.print();
-        mywindow.close();
-
-        return true;
+.other_print_layout{
+        background-color:#FFF;
     }
+</style>
 
-</script>
+<!-- CSS for the things we DO NOT want to print (web view) -->
+<style type="text/css" media="screen">
+
+   #PRINT_VIEW{
+      display: none;
+   }
+.other_web_layout{
+        background-color:#E0E0E0;
+    }
+</style>
 	</head>
 	<body>
-		<div id="yourdiv">
-    Div you want to print. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a quam at nibh adipiscing interdum. Nulla vitae accumsan ante. 
+		<div id="SCREEN_VIEW_CONTAINER">
+     the stuff I DO NOT want printed is here and will be hidden - 
+     and not printed when the user selects print.
 </div>
 
-<div>
-    This will not be printed.
+<div id="PRINT_VIEW">
+     the stuff I DO want printed is here.
 </div>
-
-<div id="anotherdiv">
-    Nor will this.
-</div>
-
-<input type="button" value="Print" onclick="PrintElem('#yourdiv')" />
 	</body>
 </html>
