@@ -22,9 +22,7 @@ page[size="A4"] {
   
 }
 
-@media print {
-  #DivIdToPrint { display: none !important; }
-}
+
 
 p {
   
