@@ -1,39 +1,15 @@
+/* main.css */
 body {
-  background: rgb(204,204,204); 
+  margin: 2em;
+  color: #fff;
+  background-color: #000;
 }
+
+/* override styles when printing */
 @media print {
-    
-        color: blue !important ;
-    }
-
-page {
-  background: white;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5cm;
-  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
-}
-page[size="A4"] {  
-  width: 21cm;
-  height: 29.7cm; 
-}
-
-#DivIdToPrint {
-  
-  color:red;font-size:100px;
-  text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
-  
-}
-
-
-
-p {
-  
-  color:red;font-size:100px;
-  text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
-  
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
 }
