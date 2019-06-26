@@ -5,9 +5,7 @@
    }
     
   #section-to-print, #section-to-print
-    * {
-  background-color: yellow;
-}
+    
     * {
     visibility: visible;
     color: red;
