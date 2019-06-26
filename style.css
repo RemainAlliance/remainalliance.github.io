@@ -1,8 +1,23 @@
 
-  body {
-    font-size: 30px;
-    margin: 0;
-    color: blue;
-    background-color: white;
+  @media print {
+  body * {
+    visibility: hidden;
   }
+  #section-to-print, #section-to-print * {
+    visibility: visible;
+    color: white;
+    font-size: 5rem;
+  }
+  #section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+  }
+}
+
+#section-to-print {
+  color: pink;
+  background: #AAAAAA;
+}
 
