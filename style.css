@@ -5,7 +5,7 @@
   }
   #section-to-print, #section-to-print * {
     visibility: visible;
-    color: white;
+    color: red;
     font-size: 40px;
   }
   #section-to-print {
