@@ -1,5 +1,5 @@
 
-  @media all {
+  @media print {
   body * {
     visibility: hidden;
   }
@@ -17,7 +17,7 @@
 }
 
 #section-to-print {
-  color: black;
-  background: white;
+  color: red;
+    font-size: 40px;
 }
 
