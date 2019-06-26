@@ -2,8 +2,17 @@
 <html>
 	<head>
 		<title>Remain Alliancetitle>
-			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">
+			
+	</head>
+	<body>
+		<div id='DivIdToPrint'>
+  <p>This is a sample text for printing purpose.</p>
+</div>
+<p>Do not print.</p>
+<input type='button' id='btn' value='Print' onclick='printDiv();'>
+	
+		
+		<script>
         function printDiv() {
   var divToPrint = document.getElementById('DivIdToPrint');
   var newWin = window.open('', 'Print-Window');
@@ -15,12 +24,5 @@
   }, 10);
 }
     </script>
-	</head>
-	<body>
-		<div id='DivIdToPrint'>
-  <p>This is a sample text for printing purpose.</p>
-</div>
-<p>Do not print.</p>
-<input type='button' id='btn' value='Print' onclick='printDiv();'>
-	</body>
+		</body>
 </html>
