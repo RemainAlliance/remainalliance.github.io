@@ -3,7 +3,7 @@ body {
 }
 @media print {
     
-        color: blue;
+        color: blue !important ;
     }
 
 page {
