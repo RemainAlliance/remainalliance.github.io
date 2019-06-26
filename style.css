@@ -6,7 +6,7 @@
   #section-to-print, #section-to-print * {
     visibility: visible;
     color: white;
-    font-size: 5rem;
+    font-size: 40px;
   }
   #section-to-print {
     position: absolute;
