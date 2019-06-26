@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
+		<title>Remain Alliancetitle>
 	</head>
 	<body>
-		<p>Click the button to print the current page.</p>
+		<div id="printableArea">
+      <h1>Print me</h1>
+</div>
 
-<button onclick="myFunction()">Print this page</button>
+<input type="button" onclick="printDiv('printableArea')" value="print a div!" />
+		
+function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
 
-<script>
-function myFunction() {
-  window.print();
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
 }
-</script>
 	</body>
 </html>
