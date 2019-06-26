@@ -1,6 +1,11 @@
 body {
   background: rgb(204,204,204); 
 }
+@media print {
+    
+        color: blue;
+    }
+
 page {
   background: white;
   display: block;
