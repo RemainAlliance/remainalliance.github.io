@@ -22,6 +22,10 @@ page[size="A4"] {
   
 }
 
+@media print {
+   p { display: none !important; }
+}
+
 p {
   
   color:red;font-size:100px;
