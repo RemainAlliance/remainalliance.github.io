@@ -18,6 +18,10 @@
     visibility: visible;
     color: red;
     font-size: 40px;
+    width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
   }
   #section-to-print {
     position: absolute;
