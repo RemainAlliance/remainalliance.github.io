@@ -2,8 +2,7 @@
   @media print {
   body * {
     visibility: hidden;
-    color: red;
-    font-size: 40px;
+   
   }
   #section-to-print, #section-to-print * {
     visibility: visible;
@@ -14,8 +13,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: red;
-    font-size: 40px;
+    
     
   }
 }
