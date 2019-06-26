@@ -23,7 +23,7 @@ page[size="A4"] {
 }
 
 @media print {
-   p { display: none !important; }
+  #DivIdToPrint { display: none !important; }
 }
 
 p {
